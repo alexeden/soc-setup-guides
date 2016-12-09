@@ -8,17 +8,22 @@ I use my initials (ape) as the login and hostname.
 ### 1. Create the User
 
 `$	useradd --create-home --groups wheel --shell /bin/bash ape`
+
 `$	passwd ape`
+
 `$	userdel alarm`
 
 
 ### 2. Create the Superuser & Privilege Scheme
 `$	pacman -Syu sudo`
+
 `$	export EDITOR=nano`
+
 `$	visudo`
 
 
 Add the lines to the `sudoers` file:
+
 `ape ALL=(ALL) ALL`
 
 
@@ -36,6 +41,7 @@ Add the lines to the `sudoers` file:
 
 ### 6. Install bash autocompletion and enable it:
 `$	sudo pacman -Sy bash-completion`
+
 `$	nano ~/.bashrc`
 
 
@@ -52,4 +58,5 @@ fi
 
 ### 6. Configure git:
 `$	git config --global user.email "alexandereden91@gmail.com"`
+
 `$	git config --global user.name "Alexander Eden"`
