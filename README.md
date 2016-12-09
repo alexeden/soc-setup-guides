@@ -1,1 +1,1 @@
-soc-setup-guides
+My experience with plugging in shiny new SOCs (e.g. Raspberry Pi, ODROID, etc.) have frequently ended in frustration because I couldn't get the device setup to provide me with the development environment I needed. This repo is a collection of notes I've kept to help me streamline the boilerplate process and keep a record of any solutions I've found for particular issues.
