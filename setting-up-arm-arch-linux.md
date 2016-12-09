@@ -55,8 +55,20 @@ fi
 ### 6. Set node-gyp’s Python version:
 `$	npm config set python /usr/bin/python2`
 
+### 7. Change the installation location of global NPM dependencies:
+`$	mkdir ~/.npm-global`
 
-### 6. Configure git:
+`$	npm config set prefix '~/.npm-global'`
+
+Add this to your bash profile (`~/.bashrc`):
+
+`export PATH=~/.npm-global/bin:$PATH`
+
+Reload your environment variables:
+
+`$	source ~/.bash_profile`
+
+### 8. Configure git:
 `$	git config --global user.email "alexandereden91@gmail.com"`
 
 `$	git config --global user.name "Alexander Eden"`
